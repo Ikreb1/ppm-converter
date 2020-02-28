@@ -187,7 +187,7 @@ void writeP3 (FILE *inFile, FILE *outFile){
   //write out to the ascii file
   for (i = 0; i < image.width * image.height; i++)
   {
-      fprintf(outFile, " %d %d %d ", image.data[i].g, image.data[i].b, image.data[i].r);
+      fprintf(outFile, "%d %d %d\n", image.data[i].g, image.data[i].b, image.data[i].r);
 
       //format handling
       if(counter == image.width) {
